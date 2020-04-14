@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title> bday </title>
+	<script type="text/javascript">
+		function day(){
+			var f= new Date();
+			var days=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+			document.getElementById("a").innerHTML=days[f.getDay()+0];
+			var g=new Date();
+			g.setDate(g.getDate()-1);
+			document.getElementById("b").innerHTML=g.getDate();
+			var h= new Date();
+			h.setFullYear(h.getFullYear()-21);
+			document.getElementById("c").innerHTML=h.getFullYear();
+			var i=new Date();
+			var months=["Jan","Feb","Mar","Apr","May","Jun","July","Aug","Sep","Oct","Nov","Dec"];
+			document.getElementById("d").innerHTML=months[i.getMonth()+6];
+			var j=new Date();
+			document.getElementById("e").innerHTML=j.getTime();
+
+		}
+	</script>
+</head>
+<body onload="day()">
+	<p align="center">your birthDay is</p>
+	<div align="center" id="a"></div>
+	<p align="center"> Your birthDate is </p>
+	<div align="center" id="b"></div>
+	<p align="center">Your Birth Year is</p>
+	<div align="center" id="c"></div>
+	<p align="center"> Your birth Month is</p>
+	<div align="center" id="d"></div>
+    <p align="center"> Your birth Time is </p>
+    <div align="center" id="e"></div>
+
+</body>
+<style type="text/css">
+	div{
+		background-color: white;
+		font-family: cursive;
+	}
+	body{
+		background-color: #99FF33;
+	}
+</style>
+</html
